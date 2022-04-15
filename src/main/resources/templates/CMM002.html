@@ -1,0 +1,151 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<title>CMM002</title>
+<meta name="robots" content="noindex,nofollow">
+<!-- Meta Tags -->
+<meta name="description"
+	content="Angry Studio is a platform for web designers and developers where we share free website templates, UI snippets and high-quality web dev tutorials.">
+<!--  Search Engine Tags -->
+<meta itemprop="name"
+	content="Angry Studio - Free Website Templates, UI Snippets and Web Dev Tutorials">
+<meta itemprop="description"
+	content="Angry Studio is a platform for web designers and developers where we share free website templates, UI snippets and high-quality web dev tutorials.">
+<meta itemprop="image"
+	content="https://angrystudio.com/featured-image.png">
+
+<!-- Twitter Cards Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title"
+	content="Angry Studio - Free Website Templates, UI Snippets and Web Dev Tutorials">
+<meta name="twitter:description"
+	content="Angry Studio is a platform for web designers and developers where we share free website templates, UI snippets and high-quality web dev tutorials.">
+<meta name="twitter:image"
+	content="https://angrystudio.com/featured-image.png">
+<link
+	href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i,800,800i,900,900i"
+	rel="stylesheet">
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
+	rel="stylesheet">
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<style>
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+	gap: 10px;
+	padding: 10px;
+}
+
+.grid-container>div {
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+}
+</style>
+
+<body>
+
+	<header class="hk-header">
+		<nav class="navbar navbar-expand-lg fixed-top navbar-light hk-navbar">
+			<div class="container">
+				<!--<a class="navbar-brand" href="#"><img src="assets/images/brand.png"></a>-->
+				<img style="margin-right: 50px; height: 45px; width: 45px;"
+					src="assets/images/3s.png"> <a class="navbar-brand"
+					href="COM002">3S-Intern</a>
+				<button class="navbar-toggler p-0 border-0" type="button"
+					data-toggle="offcanvas">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="navbar-collapse hk-offcanvas" id="navbarsExampleDefault">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active"><a class="nav-link" href="COM002">Home
+								<span class="sr-only">(current)</span>
+						</a></li>
+						<li class="nav-item dropdown"><a
+							class="nav-link dropdown-toggle" href="https://example.com"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Main
+								import / Maintenance</a>
+							<div class="dropdown-menu" aria-labelledby="drop-down01">
+								<a class="dropdown-item" href="CMM001">User Settings</a> <a
+									class="dropdown-item" href="CMM002">Template Settings</a>
+							</div></li>
+						<li class="nav-item dropdown"><a
+							class="nav-link dropdown-toggle" href="https://example.com"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Enter/Review
+								daily report</a>
+							<div class="dropdown-menu" aria-labelledby="">
+								<a class="dropdown-item" href="DRI001">Daily report entry</a> <a
+									class="dropdown-item" href="DRI002">View daily report</a>
+							</div></li>
+						<li class="nav-item dropdown"><a
+							class="nav-link dropdown-toggle" href="https://example.com"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Check</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown01">
+								<a class="dropdown-item" href="DRC001">Compare with working
+									hours</a> <a class="dropdown-item" href="DRC002">Checks have
+									not been approved</a>
+							</div></li>
+						<li class="nav-item dropdown"><a
+							class="nav-link dropdown-toggle" href="https://example.com"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Data
+								Output</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown01">
+								<a class="dropdown-item" href="DRE001">Dumping daily report
+									data</a> <a class="dropdown-item" href="DRE002">Request device
+									status</a>
+							</div></li>
+					</ul>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item dropdown"><a
+							class="nav-link dropdown-toggle" href="https://example.com"
+							id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+							aria-expanded="false"><i class="far fa-user"></i></a>
+							<div class="dropdown-menu" aria-labelledby="dropdown01">
+								<a th:text="${session.USERNAME}" class="dropdown-item" href="#">Username</a>
+								<a class="dropdown-item" href="/logout">Logout</a>
+							</div></li>
+					</ul>
+
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="grid-container">
+		<div>
+			<a href="javascript:history.back();"><img
+				style="position: absolute; bottom: auto; top: auto; margin-left: auto; width: 30px; height: 30px;"
+				src="assets/images/back.png"></a>
+		</div>
+		<p &nbsp></p>
+		<div></div>
+
+		<div>
+			<p
+				style="position: absolute; border: 2px solid grey; border-radius: 24px; width: 120px; height: 35px; font-size: 20px;"
+				th:text="'YEAR|'+${YEAR}"></p>
+			&nbsp &nbsp &nbsp <a href="add"> <img
+				style="position: absolute; bottom: auto; top: auto; margin-right: auto; width: 30px; height: 30px;"
+				src="assets/images/plus.png">
+			</a>
+		</div>
+
+		<div>
+			<p style="margin-right: -350px;">
+				<a href="listCMM002" type="submit"
+					style="position: absolute; bottom: auto; top: auto; color: white; background-color: blue; font-size: 15px; border-radius: 24px; width: 100px; padding: 5px;">Update</a>
+			</p>
+		</div>
+	</div>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>
